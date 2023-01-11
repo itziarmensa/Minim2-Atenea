@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Minim22017</string>
+    <string name="username">Name</string>
+    <string name="name">Name</string>
+    <string name="explore_followers">Explore followers</string>
+    <string name="username1">Username</string>
 </resources>
