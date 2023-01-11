@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 User user = response.body();
                 SharedPreferences preferencias = getSharedPreferences("datos", Context.MODE_PRIVATE);
                 SharedPreferences.Editor Obj_editor = preferencias.edit();
-                Obj_editor.putString("username",user.getAvatar_url());
+                Obj_editor.putString("avatar",user.getAvatar_url());
+                Obj_editor.putString("username",username);
                 Obj_editor.apply();
                 Intent i = new Intent(MainActivity.this,MainUser.class);
                 startActivity(i);
